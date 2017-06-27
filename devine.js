@@ -2,7 +2,6 @@ function jeu(){
   var ordi=Math.round(Math.random()*100);
   console.log(ordi);
   var joueur;
-  var cpt=0; //nbr. de tentatives
   var msg="Le nombre à deviner est entre 0 et 100: ";
   joueur=prompt(msg);
   for(var i=1; i<10; i++){ //str. inf 10!
@@ -15,7 +14,6 @@ function jeu(){
           do{
             joueur=prompt("Le nombre doit être compris entre 0 et 100 !!!");
           } while((joueur<0)||(joueur>100));
-        //cpt++;
         if(joueur<ordi) joueur=prompt("Plus Grand !");
         else if(joueur>ordi) joueur=prompt("Plus Petit !");
         else if(joueur==ordi) {return "Bravo !"; break;}

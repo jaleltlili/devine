@@ -1,4 +1,4 @@
-var jeu=function(){
+function jeu(){
   var ordi=Math.round(Math.random()*100);
   console.log(ordi);
   var joueur;
